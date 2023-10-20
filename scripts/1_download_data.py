@@ -10,7 +10,7 @@ urls = [
   ("https://osf.io/ehmw2/download", "steinmetz_part2.npz"),
 ]
 
-base_path = Path("data/raw")
+base_path = Path("data/raw/neuropixels")
 base_path.mkdir(parents=True, exist_ok=True)
 
 for url, fname in tqdm(urls):

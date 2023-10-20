@@ -144,7 +144,7 @@ def steinmetz_to_xarray(dd: dict[str, Any]) -> Dataset:
 
 if __name__ == '__main__':
 
-    base_path = Path('data/processed')
+    base_path = Path('data/processed/neuropixels')
     base_path.mkdir(parents=True, exist_ok=True)
 
     for path in tqdm(list(Path('data/raw').glob('*.npz')), desc="Reading Raw NPZ Files"):
