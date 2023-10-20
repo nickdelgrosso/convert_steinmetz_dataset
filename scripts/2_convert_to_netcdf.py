@@ -147,7 +147,7 @@ if __name__ == '__main__':
     base_path = Path('data/processed/neuropixels')
     base_path.mkdir(parents=True, exist_ok=True)
 
-    for path in tqdm(list(Path('data/raw').glob('*.npz')), desc="Reading Raw NPZ Files"):
+    for path in tqdm(list(Path('data/raw/neuropixels').glob('*.npz')), desc="Reading Raw NPZ Files"):
         dat = np.load(path, allow_pickle=True)['dat']
 
         for dd in tqdm(dat, desc=f"Writing Processed NetCDF Files from {path.name}"):
