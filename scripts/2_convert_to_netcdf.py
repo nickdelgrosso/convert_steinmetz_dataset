@@ -81,21 +81,21 @@ def steinmetz_to_xarray(dd: dict[str, Any]) -> Dataset:
             # Pupil data
             pupil_x = DataArray(
                 data=np.concatenate(
-                    (dd['pupil'][0, :, :], dd['pupil_passive'][0, :, :]),
+                    (dd['pupil'][1, :, :], dd['pupil_passive'][1, :, :]),
                     axis=0,
                 ),
                 dims=('trial', 'time')
             ),
             pupil_y = DataArray(
                 data=np.concatenate(
-                    (dd['pupil'][1, :, :], dd['pupil_passive'][1, :, :]),
+                    (dd['pupil'][2, :, :], dd['pupil_passive'][2, :, :]),
                     axis=0,
                 ),
                 dims=('trial', 'time')
             ),
             pupil_area = DataArray(
                 data=np.concatenate(
-                    (dd['pupil'][2, :, :], dd['pupil_passive'][2, :, :]),
+                    (dd['pupil'][0, :, :], dd['pupil_passive'][0, :, :]),
                     axis=0,
                 ),
                 dims=('trial', 'time')
