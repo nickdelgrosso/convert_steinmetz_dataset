@@ -12,3 +12,4 @@ python scripts/2_convert_to_netcdf.py
 ## Data Source:
 
   - [Steinmetz Neuropixels Data](https://github.com/NeuromatchAcademy/course-content/blob/main/projects/neurons/load_steinmetz_extra.ipynb)
+  - [Steinmetz LFP Data](https://github.com/NeuromatchAcademy/course-content/blob/main/projects/neurons/load_steinmetz_extra.ipynb)
